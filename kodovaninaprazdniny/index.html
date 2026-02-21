@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout webu</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<header>
+    
+    <div class="container">
+
+
+    <div class="header-container">
+    <div class="logo">Logo</div>
+
+        <nav class="nav-search">
+            <input type="text" placeholder="Navigace">
+            <button>🔍</button>
+        </nav>
+  <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
+    </div>
+    </div>
+    
+</header>
+
+
+<div class="container main-layout">
+
+    <div class="boxcontainer">
+        <div class="row">
+            <div class="box small">Box 1</div>
+            <div class="box small">Box 2</div>
+            <div class="box small">Box 3</div>
+            <div class="box small">Box 4</div>
+        </div>
+
+        <div class="row">
+            <div class="box medium">Box 1</div>
+            <div class="box medium">Box 2</div>
+            <div class="box medium">Box 3</div>
+        </div>
+
+        <div class="row">
+            <div class="box large">Box 3</div>
+            <div class="box large">Box 3</div>
+        </div>
+
+    </div>
+
+    <aside class="sidebar">Sidebar</aside>
+
+</div>
+
+
+<footer>
+    
+
+    <div class="container">
+    
+        <div class="footercontainer">
+
+            <div class="footerbox">Box 1</div>
+            <div class="footerbox">Box 2</div>
+            <div class="footerbox">Box 3</div>
+        </div>
+    
+    </div>
+</footer>
+
+</body>
+</html>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const nav = document.querySelector(".nav-search");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+</script>
+
